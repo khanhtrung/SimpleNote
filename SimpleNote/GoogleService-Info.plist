@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>333338492835-0q5nnvnii9c2afkep8pprk7sut89v5je.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.333338492835-0q5nnvnii9c2afkep8pprk7sut89v5je</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBwPf-HOdQIc28VUEEFu0du6AHR_GWjAIk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>333338492835</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.khanhtrung.SimpleNote</string>
+	<key>PROJECT_ID</key>
+	<string>fir-note-bfade</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-note-bfade.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:333338492835:ios:b4313029ec4cbf7a</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-note-bfade.firebaseio.com</string>
+</dict>
+</plist>

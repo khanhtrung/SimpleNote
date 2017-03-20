@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		1358A7941E805EEA001DE3E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7931E805EEA001DE3E7 /* AppDelegate.swift */; };
-		1358A7961E805EEA001DE3E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7951E805EEA001DE3E7 /* ViewController.swift */; };
 		1358A7991E805EEA001DE3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1358A7971E805EEA001DE3E7 /* Main.storyboard */; };
 		1358A79B1E805EEA001DE3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1358A79A1E805EEA001DE3E7 /* Assets.xcassets */; };
 		1358A79E1E805EEA001DE3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1358A79C1E805EEA001DE3E7 /* LaunchScreen.storyboard */; };
+		1358A7A71E805FC6001DE3E7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7A61E805FC6001DE3E7 /* DataService.swift */; };
+		1358A7AD1E80603A001DE3E7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7AC1E80603A001DE3E7 /* Note.swift */; };
+		1358A7B01E8060A9001DE3E7 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7AF1E8060A9001DE3E7 /* NoteListViewController.swift */; };
+		1358A7B41E806341001DE3E7 /* NoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7B31E806341001DE3E7 /* NoteViewCell.swift */; };
+		1358A7B61E806555001DE3E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1358A7B51E806555001DE3E7 /* GoogleService-Info.plist */; };
+		1358A7B81E8068C4001DE3E7 /* DetailNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358A7B71E8068C4001DE3E7 /* DetailNoteViewController.swift */; };
+		DEB00AFD0A13305F38DB33A2 /* Pods_SimpleNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971EF109AC391C55668C63D2 /* Pods_SimpleNote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1358A7901E805EEA001DE3E7 /* SimpleNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1358A7931E805EEA001DE3E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1358A7951E805EEA001DE3E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1358A7981E805EEA001DE3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1358A79A1E805EEA001DE3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1358A79D1E805EEA001DE3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1358A79F1E805EEA001DE3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1358A7A61E805FC6001DE3E7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1358A7AC1E80603A001DE3E7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1358A7AF1E8060A9001DE3E7 /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		1358A7B31E806341001DE3E7 /* NoteViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewCell.swift; sourceTree = "<group>"; };
+		1358A7B51E806555001DE3E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1358A7B71E8068C4001DE3E7 /* DetailNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNoteViewController.swift; sourceTree = "<group>"; };
+		6CAFE86247F9900EE16D461F /* Pods-SimpleNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote/Pods-SimpleNote.debug.xcconfig"; sourceTree = "<group>"; };
+		971EF109AC391C55668C63D2 /* Pods_SimpleNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		974B40C8C7BE74A67C34E28E /* Pods-SimpleNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote/Pods-SimpleNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB00AFD0A13305F38DB33A2 /* Pods_SimpleNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +53,10 @@
 		1358A7871E805EEA001DE3E7 = {
 			isa = PBXGroup;
 			children = (
-				1358A7921E805EEA001DE3E7 /* SimpleNote */,
+				99753B5F6783AF49F795C3E8 /* Frameworks */,
+				4A072A282DF60DC0B994540F /* Pods */,
 				1358A7911E805EEA001DE3E7 /* Products */,
+				1358A7921E805EEA001DE3E7 /* SimpleNote */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,67 @@
 			isa = PBXGroup;
 			children = (
 				1358A7931E805EEA001DE3E7 /* AppDelegate.swift */,
-				1358A7951E805EEA001DE3E7 /* ViewController.swift */,
-				1358A7971E805EEA001DE3E7 /* Main.storyboard */,
 				1358A79A1E805EEA001DE3E7 /* Assets.xcassets */,
-				1358A79C1E805EEA001DE3E7 /* LaunchScreen.storyboard */,
+				1358A7A81E805FEB001DE3E7 /* CustomCell */,
+				1358A7B51E806555001DE3E7 /* GoogleService-Info.plist */,
 				1358A79F1E805EEA001DE3E7 /* Info.plist */,
+				1358A79C1E805EEA001DE3E7 /* LaunchScreen.storyboard */,
+				1358A7971E805EEA001DE3E7 /* Main.storyboard */,
+				1358A7AB1E80602A001DE3E7 /* Model */,
+				1358A7A51E805FB9001DE3E7 /* Service */,
+				1358A7AE1E806091001DE3E7 /* ViewController */,
 			);
 			path = SimpleNote;
+			sourceTree = "<group>";
+		};
+		1358A7A51E805FB9001DE3E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1358A7A61E805FC6001DE3E7 /* DataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		1358A7A81E805FEB001DE3E7 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				1358A7B31E806341001DE3E7 /* NoteViewCell.swift */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		1358A7AB1E80602A001DE3E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1358A7AC1E80603A001DE3E7 /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1358A7AE1E806091001DE3E7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1358A7AF1E8060A9001DE3E7 /* NoteListViewController.swift */,
+				1358A7B71E8068C4001DE3E7 /* DetailNoteViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4A072A282DF60DC0B994540F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CAFE86247F9900EE16D461F /* Pods-SimpleNote.debug.xcconfig */,
+				974B40C8C7BE74A67C34E28E /* Pods-SimpleNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99753B5F6783AF49F795C3E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				971EF109AC391C55668C63D2 /* Pods_SimpleNote.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1358A7A21E805EEA001DE3E7 /* Build configuration list for PBXNativeTarget "SimpleNote" */;
 			buildPhases = (
+				14CE848A0F5FA6A03DE56B26 /* [CP] Check Pods Manifest.lock */,
 				1358A78C1E805EEA001DE3E7 /* Sources */,
 				1358A78D1E805EEA001DE3E7 /* Frameworks */,
 				1358A78E1E805EEA001DE3E7 /* Resources */,
+				F3504F7BE2B300BE21F74A38 /* [CP] Embed Pods Frameworks */,
+				965263ABE5BFADC941B3AF9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +170,6 @@
 				TargetAttributes = {
 					1358A78F1E805EEA001DE3E7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = R7XYR247AG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1358A79E1E805EEA001DE3E7 /* LaunchScreen.storyboard in Resources */,
+				1358A7B61E806555001DE3E7 /* GoogleService-Info.plist in Resources */,
 				1358A79B1E805EEA001DE3E7 /* Assets.xcassets in Resources */,
 				1358A7991E805EEA001DE3E7 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +206,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CE848A0F5FA6A03DE56B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		965263ABE5BFADC941B3AF9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote/Pods-SimpleNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3504F7BE2B300BE21F74A38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote/Pods-SimpleNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1358A78C1E805EEA001DE3E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1358A7961E805EEA001DE3E7 /* ViewController.swift in Sources */,
+				1358A7AD1E80603A001DE3E7 /* Note.swift in Sources */,
+				1358A7A71E805FC6001DE3E7 /* DataService.swift in Sources */,
+				1358A7B41E806341001DE3E7 /* NoteViewCell.swift in Sources */,
+				1358A7B01E8060A9001DE3E7 /* NoteListViewController.swift in Sources */,
 				1358A7941E805EEA001DE3E7 /* AppDelegate.swift in Sources */,
+				1358A7B81E8068C4001DE3E7 /* DetailNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +385,10 @@
 		};
 		1358A7A31E805EEA001DE3E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CAFE86247F9900EE16D461F /* Pods-SimpleNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R7XYR247AG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khanhtrung.SimpleNote;
@@ -272,9 +399,10 @@
 		};
 		1358A7A41E805EEA001DE3E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974B40C8C7BE74A67C34E28E /* Pods-SimpleNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R7XYR247AG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khanhtrung.SimpleNote;
@@ -302,6 +430,7 @@
 				1358A7A41E805EEA001DE3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
