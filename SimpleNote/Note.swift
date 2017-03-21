@@ -16,50 +16,64 @@ let NOTE_DETAIL = "note-detail"
 class Note{
     private var _noteRef: FIRDatabaseReference!
     
-    private(set) var noteKey: String!
-    private(set) var noteTitle: String!
-    private(set) var noteDetail: String!
+    private(set) var _key: String!
+    private(set) var _title: String!
+    private(set) var _detail: String!
+    
+    var Key: String {
+        return _key
+    }
+    var Title: String {
+        return _title
+    }
+    var Detail: String {
+        return _detail
+    }
+    
+    
     // Init
     init(noteTitle: String, noteDetail: String) {
-        self.noteTitle = noteTitle
-        self.noteDetail = noteDetail
+        self._title = noteTitle
+        self._detail = noteDetail
     }
     
     // Init with key and Dict data
     init(noteKey: String, noteData: Dictionary <String, AnyObject>) {
-        self.noteKey = noteKey
+        self._key = noteKey
         
         if let noteTitle = noteData[NOTE_TITLE] as? String {
-            self.noteTitle = noteTitle
+            self._title = noteTitle
         }
         
         if let noteDetail = noteData[NOTE_DETAIL] as? String {
-            self.noteDetail = noteDetail
+            self._detail = noteDetail
         }
     }
     
     // Init to parse data from snapshot
     init(snapshot: FIRDataSnapshot) {
-        self.noteKey = snapshot.key
+        self._key = snapshot.key
         
         let dict = snapshot.value as? Dictionary <String, AnyObject>
-        //print("TRUNG: ---- \(snapshot.value!)")
-        //print(dict!)
         if let noteTitle = dict![NOTE_TITLE] as? String {
-            self.noteTitle = noteTitle
+            self._title = noteTitle
         }
         
         if let noteDetail = dict![NOTE_DETAIL] as? String {
-            self.noteDetail = noteDetail
+            self._detail = noteDetail
         }
         
         _noteRef = snapshot.ref
     }
     
     func toAnyObject() -> [String: AnyObject] {
-        return [NOTE_TITLE: noteTitle as AnyObject,
-                NOTE_DETAIL: noteDetail as AnyObject
+        return [NOTE_TITLE: _title as AnyObject,
+                NOTE_DETAIL: _detail as AnyObject
         ]
     }
     
+    func Update(title: String, detail: String) {
+        self._title = title
+        self._detail = detail
+    }
 }

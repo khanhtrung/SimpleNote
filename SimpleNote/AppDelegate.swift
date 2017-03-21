@@ -18,12 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         super.init()
         // Use Firebase library to configure APIs
         FIRApp.configure()
+        
+        // Enable Firebase DB Offline Capability
         FIRDatabase.database().persistenceEnabled = true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Status bar custom stye
+        application.statusBarStyle = .lightContent
+        
+        var navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = uicolorFromHex(rgbValue: 0xffffff)
+        navigationBarAppearace.barTintColor = uicolorFromHex(rgbValue: 0x034517)
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
         return true
     }
 
@@ -48,7 +60,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func uicolorFromHex(rgbValue:UInt32)->UIColor{
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
+    }
 }
 

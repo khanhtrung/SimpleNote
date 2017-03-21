@@ -170,6 +170,7 @@
 				TargetAttributes = {
 					1358A78F1E805EEA001DE3E7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R7XYR247AG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -388,7 +389,7 @@
 			baseConfigurationReference = 6CAFE86247F9900EE16D461F /* Pods-SimpleNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R7XYR247AG;
 				INFOPLIST_FILE = SimpleNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khanhtrung.SimpleNote;
@@ -402,7 +403,7 @@
 			baseConfigurationReference = 974B40C8C7BE74A67C34E28E /* Pods-SimpleNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R7XYR247AG;
 				INFOPLIST_FILE = SimpleNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khanhtrung.SimpleNote;

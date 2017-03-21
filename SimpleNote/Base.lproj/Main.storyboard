@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Notes List-->
+        <!--Notes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NoteListViewController" customModule="SimpleNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +60,7 @@
                                         <connections>
                                             <outlet property="detailLabel" destination="6vw-7M-Jho" id="d2i-X7-Fv9"/>
                                             <outlet property="titleLabel" destination="vaB-7b-ONq" id="QZb-Pa-qZu"/>
-                                            <segue destination="sMQ-g3-YhD" kind="show" id="6Un-ur-D3D"/>
+                                            <segue destination="sMQ-g3-YhD" kind="show" identifier="updateNote" id="CEv-2P-WIT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -73,10 +74,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K1l-Fb-hsf" secondAttribute="bottom" id="iUP-rY-042"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Notes List" id="pn5-iq-blC">
+                    <navigationItem key="navigationItem" title="Notes" id="pn5-iq-blC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aEH-b6-ums">
                             <connections>
-                                <segue destination="sMQ-g3-YhD" kind="show" id="hqo-db-j8j"/>
+                                <segue destination="sMQ-g3-YhD" kind="show" identifier="addNote" id="WYA-jp-W3x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -88,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--Detail Note View Controller-->
+        <!--Detail-->
         <scene sceneID="Z1V-J7-wRw">
             <objects>
                 <viewController id="sMQ-g3-YhD" customClass="DetailNoteViewController" customModule="SimpleNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,60 +104,61 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTg-RA-PfH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CgR-So-qGH">
-                                        <rect key="frame" x="8" y="71" width="359" height="564"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P8M-2n-B3Q">
+                                        <rect key="frame" x="8" y="75" width="359" height="560"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zOW-PR-Sed">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="564"/>
-                                                <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P98-A5-tsN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="23"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-Qi-DL9">
-                                                        <rect key="frame" x="0.0" y="23" width="359" height="511"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdb-dn-qYV">
-                                                        <rect key="frame" x="0.0" y="534" width="359" height="30"/>
-                                                        <state key="normal" title="Save"/>
-                                                        <connections>
-                                                            <action selector="saveNote:" destination="sMQ-g3-YhD" eventType="touchUpInside" id="uI6-pD-QCk"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="7Do-Qi-DL9" firstAttribute="top" secondItem="P98-A5-tsN" secondAttribute="bottom" id="5lk-Fi-AhW"/>
-                                                    <constraint firstItem="7Do-Qi-DL9" firstAttribute="top" secondItem="P98-A5-tsN" secondAttribute="bottom" id="Rq8-jt-r8m"/>
-                                                </constraints>
-                                            </stackView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hjd-Px-l1w">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="27"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wXa-5z-miH">
+                                                <rect key="frame" x="0.0" y="27" width="359" height="533"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P8M-2n-B3Q" secondAttribute="bottom" constant="32" id="LAI-DS-41e"/>
+                                    <constraint firstItem="P8M-2n-B3Q" firstAttribute="trailing" secondItem="ZTg-RA-PfH" secondAttribute="trailingMargin" id="dur-Dy-IdF"/>
+                                    <constraint firstItem="P8M-2n-B3Q" firstAttribute="leading" secondItem="ZTg-RA-PfH" secondAttribute="leadingMargin" id="hvO-bd-y2W"/>
+                                    <constraint firstItem="P8M-2n-B3Q" firstAttribute="top" secondItem="ZTg-RA-PfH" secondAttribute="top" constant="75" id="ldt-PO-lCO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hh1-1Q-dxi" firstAttribute="top" secondItem="ZTg-RA-PfH" secondAttribute="bottom" id="WCv-tR-DXJ"/>
-                            <constraint firstAttribute="trailing" secondItem="ZTg-RA-PfH" secondAttribute="trailing" id="aPf-zg-huP"/>
-                            <constraint firstItem="ZTg-RA-PfH" firstAttribute="top" secondItem="2Wd-Wg-Bym" secondAttribute="top" id="hkC-T9-8z0"/>
-                            <constraint firstItem="ZTg-RA-PfH" firstAttribute="leading" secondItem="2Wd-Wg-Bym" secondAttribute="leading" id="nk6-MM-bdC"/>
+                            <constraint firstAttribute="trailing" secondItem="ZTg-RA-PfH" secondAttribute="trailing" id="9rf-fB-KMF"/>
+                            <constraint firstItem="ZTg-RA-PfH" firstAttribute="bottom" secondItem="hh1-1Q-dxi" secondAttribute="top" id="RSQ-Yq-BPm"/>
+                            <constraint firstItem="ZTg-RA-PfH" firstAttribute="leading" secondItem="2Wd-Wg-Bym" secondAttribute="leading" id="Ze0-F5-nOa"/>
+                            <constraint firstItem="ZTg-RA-PfH" firstAttribute="top" secondItem="2Wd-Wg-Bym" secondAttribute="top" id="uyX-oF-e7G"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail" id="eOc-2V-Hz0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cCF-KV-0d1">
+                            <connections>
+                                <action selector="cancelAction:" destination="sMQ-g3-YhD" id="bFk-5V-anU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Cym-ag-pYB">
+                            <connections>
+                                <action selector="saveAction:" destination="sMQ-g3-YhD" id="VH3-ft-MBR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="DetailTextView" destination="7Do-Qi-DL9" id="VOb-dq-gRW"/>
-                        <outlet property="titleTextField" destination="P98-A5-tsN" id="N48-8H-u4g"/>
+                        <outlet property="detailTextView" destination="wXa-5z-miH" id="Qyq-Ar-C6V"/>
+                        <outlet property="titleTextField" destination="Hjd-Px-l1w" id="whJ-O4-fc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K0-KP-Vhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981.5999999999999" y="136.28185907046478"/>
+            <point key="canvasLocation" x="2000.8" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VHR-ri-gmb">
@@ -178,6 +180,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Un-ur-D3D"/>
+        <segue reference="CEv-2P-WIT"/>
     </inferredMetricsTieBreakers>
 </document>
