@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 - [ ] Peek and Pop with 3D Touch to edit a note.
 - [ ] Display due date notifications.
 
-- For each note
+For each note:
 - [ ] User can set color.
 - [ ] User can create checklist detail.
 - [ ] User can set reminding date time.
