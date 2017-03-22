@@ -32,13 +32,13 @@ The following **additional** features are implemented:
 
 - [ ] App shortcut to quickly create new note from Home screen.
 - [ ] Peek and Pop with 3D Touch to edit a note.
+- [ ] Display due date notifications.
 
-[ ] For each note
+- For each note
 - [ ] User can set color.
 - [ ] User can create checklist detail.
 - [ ] User can set reminding date time.
-- [ ] Display due date notifications.
-
+- [ ] User can drag and drop to reorder notes.
 
 
 
